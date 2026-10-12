@@ -179,6 +179,7 @@ export const experience = [
     points: [
       "Developed Shiny Express applications in Python.",
       "Contributed to project delivery through creative problem-solving.",
+      "Supported meetings by preparing materials, setting up meeting spaces and taking notes.",
     ],
   },
 ];
