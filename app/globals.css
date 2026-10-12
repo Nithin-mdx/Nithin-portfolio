@@ -118,3 +118,6 @@ summary::-webkit-details-marker { display: none; }
   0% { transform: translateY(-100%); }
   100% { transform: translateY(200%); }
 }
+
+/* Hide the "Powered by Netlify" badge Netlify injects on public deploys (it also sits on top of the chat button). */
+#nl-badge-frame { display: none !important; }
