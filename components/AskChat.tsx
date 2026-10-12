@@ -66,7 +66,7 @@ export default function AskChat() {
         onClick={() => setOpen((o) => !o)}
         aria-expanded={open}
         aria-controls="ask-panel"
-        className="label fixed bottom-4 right-4 z-[75] flex items-center gap-2 rounded-full bg-ink px-5 py-3 text-paper shadow-lg transition-transform hover:scale-105 md:bottom-6 md:right-8"
+        className="label fixed bottom-4 right-4 z-[75] flex items-center gap-2 rounded-full bg-ink px-5 py-3 text-paper shadow-lg ring-1 ring-paper/25 transition-transform hover:scale-105 md:bottom-6 md:right-8"
       >
         <span aria-hidden className="h-2 w-2 rounded-full bg-acid" />
         {open ? "Close" : "Ask about me"}

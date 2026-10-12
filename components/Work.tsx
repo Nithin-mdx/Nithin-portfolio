@@ -61,7 +61,7 @@ export default function Work() {
               onClick={(e) => { e.preventDefault(); go(`/work/${p.slug}`, p.title); }}
               onPointerEnter={() => { setActive(i); show(!!p.image); blobFocus.project = i; }}
               onFocus={() => setActive(i)}
-              className="group grid grid-cols-12 gap-x-8 gap-y-4 py-8 md:py-10"
+              className="group grid grid-cols-12 gap-x-4 gap-y-4 py-8 md:gap-x-8 md:py-10"
             >
               {/* Mobile: inline image card instead of hover preview */}
               {p.image && (

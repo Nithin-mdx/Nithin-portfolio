@@ -43,10 +43,10 @@ export default function About() {
         ))}
       </p>
 
-      <div className="mt-20 grid gap-12 md:mt-32 md:grid-cols-12">
-        <p className="text-base leading-relaxed md:col-span-4 md:col-start-2 md:text-lg">{profile.summary}</p>
+      <div className="mt-20 grid gap-12 md:mt-32 lg:grid-cols-12">
+        <p className="max-w-xl text-base leading-relaxed md:text-lg lg:col-span-4 lg:col-start-2">{profile.summary}</p>
 
-        <dl className="grid grid-cols-2 gap-x-6 gap-y-8 md:col-span-3 md:col-start-7">
+        <dl className="grid grid-cols-2 gap-x-6 gap-y-8 md:grid-cols-4 lg:col-span-3 lg:col-start-7 lg:grid-cols-2">
           {profile.facts.map((f) => (
             <div key={f.label} className="border-t border-current/20 pt-3">
               <dt className="label opacity-60">{f.label}</dt>
@@ -55,7 +55,7 @@ export default function About() {
           ))}
         </dl>
 
-        <div className="md:col-span-2 md:col-start-11">
+        <div className="max-w-sm lg:col-span-2 lg:col-start-11 lg:max-w-none">
           <h3 className="label opacity-60">Languages</h3>
           <ul className="mt-3 space-y-2">
             {profile.languages.map((l) => (

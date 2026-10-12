@@ -30,7 +30,9 @@ export default function Marquee({ items, speed = 1, reverse = false, className =
     items.map((t, i) => (
       <span key={`${hidden}-${i}`} aria-hidden={hidden || undefined} className="flex shrink-0 items-center">
         <span className="px-[0.25em]">{t}</span>
-        <span className="text-acid text-[0.5em]" aria-hidden>✳</span>
+        <svg aria-hidden viewBox="0 0 24 24" className="h-[0.42em] w-[0.42em] shrink-0 text-acid" fill="none" stroke="currentColor" strokeWidth={3} strokeLinecap="round">
+          <path d="M12 2v20M3.3 7l17.4 10M3.3 17l17.4-10" />
+        </svg>
       </span>
     ));
 

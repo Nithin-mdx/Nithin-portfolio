@@ -40,7 +40,7 @@ export default function Hero() {
       </div>
 
       <div>
-        <h1 id="hero-name" className="display kinetic whitespace-nowrap text-[12.9vw]" aria-label={profile.name}>
+        <h1 id="hero-name" className="display kinetic whitespace-nowrap text-[calc((100vw-2rem)/7.5)] md:text-[calc((100vw-4rem)/7.4)]" aria-label={profile.name}>
           <SplitReveal as="span" className="block" play={loaded}>{profile.firstName}</SplitReveal>
           <SplitReveal as="span" className="block" play={loaded} delay={0.15}>{profile.lastName}</SplitReveal>
         </h1>

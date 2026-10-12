@@ -72,9 +72,13 @@ export default function Contact() {
   return (
     <section id="contact" data-blob="contact" data-theme-section="dark" className="relative px-4 py-28 md:px-8 md:py-40">
       <SectionLabel>Contact</SectionLabel>
-      <h2 ref={title} className="display kinetic text-[22vw] md:text-[17vw]" aria-label="Let's talk">
-        {"LET'S TALK".split("").map((c, i) => (
-          <span key={i} aria-hidden className="ch inline-block origin-bottom">{c === " " ? " " : c}</span>
+      <h2 ref={title} className="display kinetic text-[calc((100vw-2rem)/2.75)] md:text-[calc((100vw-4rem)/6)]" aria-label="Let's talk">
+        {["LET'S", "TALK"].map((word) => (
+          <span key={word} aria-hidden className="block whitespace-nowrap md:mr-[0.25em] md:inline-block">
+            {word.split("").map((c, i) => (
+              <span key={i} className="ch inline-block origin-bottom">{c}</span>
+            ))}
+          </span>
         ))}
       </h2>
 
