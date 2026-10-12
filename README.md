@@ -1,5 +1,7 @@
 # Nithin Nandakumar — Portfolio
 
+**Live:** https://nithin-nandakumar.netlify.app
+
 Next.js 16 · TypeScript · Tailwind v4 · React Three Fiber · GSAP (ScrollTrigger + SplitText) · Lenis
 
 ## Run
